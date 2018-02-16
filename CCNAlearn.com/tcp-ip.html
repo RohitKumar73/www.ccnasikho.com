@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+                <link type="img-x-icom" rel="icon" href="image/favicon.png">
+    <style>
+        * {
+    box-sizing: border-box;
+}
+         #footer {
+            background-color: blue;
+        } 
+        #footer a{
+            font-size: 50px;
+            color: white;
+            
+        }
+         #footer a:hover{
+            font-size: 60px;
+            color: green;
+            
+        }
+ .div1 img{
+        width:200px;
+        height: 100px;
+    }
+    .menu {
+       
+        width: 100%;
+        height: 40px;
+       
+    background-color: aqua;
+}
+    .menu a{
+        border-width: 5px;
+    
+        
+padding: 30px 100px ;
+            }
+body {
+  margin: 0;
+}
+    .column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    
+    width: 20%;
+}  
+
+/* Middle column */
+.column.middle {
+    
+    width: 60%;
+}
+       
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+        
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle, .column.sides {
+        width: 100%;
+    }
+}
+         #newuser{
+        background-size: 50px;
+        background-color: aquamarine;
+        font-size: 40px;
+        font-style: italic;
+       
+    } 
+        #newuser:hover{
+        background-color: black;
+        width: 100px;
+    }
+    .menu a:hover{
+       opacity: 0.5;
+        
+    }
+        .topnav{
+        background-color: white;
+        width: 100%;
+        height: 120px;
+        top: 0px;
+               position: fixed;
+        
+    }
+        .divback{
+            margin-top: 120px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+        <div class="div1">
+<a href="../CCNAlearn.com/Ccnalearn.html">  <img src="image/logo.png"/></a>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="../CCNAlearn.com/new_user.html" id="newuser">New user</a>    
+        
+
+</div>
+    <div class= "menu">
+   
+         <a href="Home.html">Home</a>  
+           <a href="Models.html">Models</a>
+        <a  href="Protocol.html">Protocols</a>
+        <a href="../CCNAlearn.com/ip.html">Internal Protocol</a>
+        <a href="../CCNAlearn.com/Routing.html">Example</a>  
+        
+    </div >
+            </div>
+        <div class="divback">
+   <div class="row">
+  <div class="column side">
+      <ol>
+      <li>OSI MODEL</li>
+         <ul>
+            <li >-><a href="../CCNAlearn.com/Layer1.html">Physical Layer</a></li>
+             <li>-><a href="../CCNAlearn.com/Datalink.html">Data-link Layer</a></li>
+             <li>-><a href="../CCNAlearn.com/network.html">Network Layer</a></li>             
+             <li>-><a href="../CCNAlearn.com/Transport.html">Transport Layer</a></li>
+             <li>-><a href="#" >Session Layer</a></li>
+             <li>-><a href="#">Presentation Layer</a></li>
+             <li>-><a href="../CCNAlearn.com/Application.html">Application Layer</a></li>
+         </ul>
+    <li>TCP/IP MODEL ==><a href="../CCNAlearn.com/tcp-ip.html" >All in one</a></li>
+    <ul>
+    <li>-><a href="#">Application Layer</a></li>
+        <li>-><a href="#">Transport Layer</a></li>
+        <li>-><a href="#">Internet/Network Layer</a></li>
+        <li>-><a href="#">Host-to-Network Laye</a>r</li>
+    </ul>
+      </ol>
+  </div>
+       <div class="column middle">
+          <h3>TCP/IP MOdel</h3>
+           <p>TCP/IP is acroynm is <strong>Tramission Control Protocal and Internet Protocol</strong>.It is the network model used in the current Internet architecture as well. Protocols are set of rules which govern every possible communication over a network. These protocols describe the movement of data between the source and destination or the internet.</p>
+         <center>  <img src="image/tcp.png"></center>
+           <ol>
+           <li>Host-to-network layer:<ul><li>Used in connection to host. </li>
+               <li>This is lowest layer of Tcp/ip model</li>
+               </ul></li>
+               
+               <li>Internet layer:<ul><li>Its is independently packet are reach to destionation</li>
+                   <li>Internet protocol are used in this layer.</li>
+                   <li>Its is connectionless internetwork layer.</li></ul></li>
+               <li>Transport Layer:<ul><li>It decided the data is tranfer in which form and also decides the path.</li>
+                   <li>This layer adds header information to the data.</li>
+                   <li>This layer also arrange the packets in serial/sequence vice.</li></ul></li>
+               <li>Application Layer: <ol>  <li> <strong>Telnet:</strong>Its enables users on one machine to login into other computer on the net telnet can be beneficial because is enables you server or host computer without sitting at its Keyboard.</li>     </li>
+               <li><strong>FTP:</strong> is protocol ,that allows the file transfer those whose connected over a network.</li>
+               <li><strong>SMTP(Simple Transport Protocol)</strong> is a protocol, which used to transport electronic mail between source and destination.</li>
+               <li><strong>DNS(Domain Name Server)</strong> resolves an IP address into a textual address for Hosts connected over a network</li>
+           </ol>
+       </div>
+       <div class="column side"></div>
+        </div>
+         <footer  id ="footer" style="color:white;">
+            <h1>CCNA tutorial</h1>
+            <p>CCNA Routing and Switching curriculum is a gateway to entry-level networking jobs and IT careers. The curriculum consists of 4, 70-hour courses: Introduction to Networks, Routing and Switching Essentials, Scaling Networks, and Connecting Networks. The first 2 courses prepare you for the Cisco CCENT certification exam or to study CCNA Security. All 4 courses are recommended before taking the Cisco CCNA Routing and Switching certification exam.<br><br>
+Develop a working knowledge of routing, switching, network applications, protocols, and services.<br><br>
+Study with an instructor in the classroom and access expert content online anytime.<br><br>
+Practice what you learn on both real equipment and Cisco Packet Tracer, a network configuration simulation tool.<br><br>
+Get immediate feedback on your work through built-in quizzes and tests.<br><br>
+Prepare for the workplace with collaborative projects and presentations.<br><br>
+Connect with the global Cisco Networking Academy community.<br>
+</p>
+        <a href="#">Facebook</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#">twiter</a>
+        
+        
+        </footer></div>
+    </body>
+</html>

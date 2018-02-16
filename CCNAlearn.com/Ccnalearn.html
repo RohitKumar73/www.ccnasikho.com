@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <title>ccnalearn</title>
+        <meta content="utf-8">
+        <link type="img-x-icom" rel="icon" href="image/favicon.png">
+<style>
+    
+ .div1 img{
+     position: absolute;
+        width:200px;
+        height: 100px;
+    }
+    .topnav{
+        background-color: white;
+        width: 100%;
+        height: 100px;
+        top: 0px;
+               position: fixed;
+        
+    }
+   
+    #footer {
+            background-color: blue;
+        } 
+        #footer a{
+            font-size: 50px;
+            color: white;
+            
+        }
+         #footer a:hover{
+            font-size: 60px;
+            color: green;
+            
+        }
+    
+    
+    .menu {
+       top: 50px;
+        position: relative;
+        display: block;
+        
+            width: 100%;
+        height: 40px;
+       overflow: hidden;
+    background-color: aqua;
+}
+    .menu a{
+        text-shadow: 2px;
+        text-align: center;
+    padding: 30px 100px ;
+    }
+   
+    .color{
+        background-color:aqua;
+    }
+    .div2 form{
+        border-style: solid;
+      align-content: center;
+        margin: 200px 500px;
+        
+    }
+    .divback{
+                
+         background-image: url(image/background.png);
+        }
+#sub:hover{ 
+        background-color: rebeccapurple;
+    }
+    #form{
+        align-content: center;
+        
+    }
+    
+    #newuser{
+        top: 100px;
+        background-size: 50px;
+        background-color: aquamarine;
+        font-size: 40px;
+        font-style: italic;
+       
+    }
+    #newuser:hover{
+        background-color: black;
+        width: 100px;
+    }
+    .menu a:hover{
+        opacity: 0.6;
+        width: 100px;
+            
+    }
+    #que{
+        background-color: cornsilk;
+        margin-top: 50px;
+        
+    }
+    
+   
+    </style>
+    </head>
+
+<body>  
+    <div class="topnav">
+    <div class="div1">
+ <a href="../CCNAlearn.com/Ccnalearn.html">  <img src="image/logo.png"/></a>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="../CCNAlearn.com/new_user.html" id="newuser">New user</a>    
+        
+    </div>
+       
+    <div class= "menu">   
+         <a href="Home.html">Home</a>  
+           <a href="Models.html">Models</a>
+        <a  href="Protocol.html">Protocols</a>
+        <a href="../CCNAlearn.com/ip.html">Internal Protocol</a>
+        <a href="../CCNAlearn.com/Routing.html">Example</a>
+        </div>
+        <marquee  id="que" behavior="scroll" height="20px" style="color: blue;">CCNA (Cisco Certified Network Associate) is an information technology (IT) certification from Cisco.</marquee>
+
+    </div>
+             <div class="divback">
+    <div class="div2" >
+   
+     <form  action="loginpage.php" method="post" id="form" onsubmit="return validation()" name="myform">
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label style="color:blue; font-size:20px; font-style:italic;"> Username: </label> <input type="text" name ="username" placeholder="Emailid/Name" ><br><br>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <label style="color:blue; font-size:20px; font-style:italic;s">Password: </label>  <input type ="password" name="passw" placeholder="Password"><br><br>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <select name="sel">
+        <option>Admin</option>
+          <option >User</option>
+        </select>  
+     &nbsp; <input type="submit" name="sub" value="SUBMIT" id="sub">
+        
+          </form>
+        </div>
+                 <script>
+                 function validation(){
+                     var Username= document.myform.username.value;
+                     var Password= document.myform.password.value;
+                     if(Username==null || Username==""){
+                         alert("Please fill your Username"); 
+                         return false;
+                     }else if (Password.length<=6){
+                         alert("password is week");
+                         return false;
+                     }
+                 }
+                     
+                 </script>
+   <footer  id ="footer" style="color:white;">
+            <h1>CCNA tutorial</h1>
+            <p>CCNA Routing and Switching curriculum is a gateway to entry-level networking jobs and IT careers. The curriculum consists of 4, 70-hour courses: Introduction to Networks, Routing and Switching Essentials, Scaling Networks, and Connecting Networks. The first 2 courses prepare you for the Cisco CCENT certification exam or to study CCNA Security. All 4 courses are recommended before taking the Cisco CCNA Routing and Switching certification exam.<br><br>
+Develop a working knowledge of routing, switching, network applications, protocols, and services.<br><br>
+Study with an instructor in the classroom and access expert content online anytime.<br><br>
+Practice what you learn on both real equipment and Cisco Packet Tracer, a network configuration simulation tool.<br><br>
+Get immediate feedback on your work through built-in quizzes and tests.<br><br>
+Prepare for the workplace with collaborative projects and presentations.<br><br>
+Connect with the global Cisco Networking Academy community.<br>
+</p>
+        <a href="#">Facebook</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#">twiter</a>
+        
+        
+        </footer>
+            
+            </div>
+    </body>
+</html>

@@ -1,0 +1,168 @@
+<DOCTYPE HTML>
+<html>
+    <head>
+    <meta content="utf-8";>
+          <title >New user</title>
+                <link type="img-x-icom" rel="icon" href="image/favicon.png">
+        <style>
+           .topnav{
+        background-color: white;
+        width: 100%;
+        height: 100px;
+        top: 0px;
+               position: fixed;
+        
+    }
+ .div1 img{
+        width:200px;
+        height: 100px;
+    }
+    .menu {
+       position:fixed;        
+        width: 100%;
+        height: 40px;
+       
+    background-color: aqua;
+}
+             #footer {
+            background-color: blue;
+        } 
+        #footer a{
+            font-size: 50px;
+            color: white;
+            
+        }
+         #footer a:hover{
+            font-size: 60px;
+            color: green;
+            
+        }
+    .menu a{
+        border-width: 5px;
+        padding: 30px 100px ;
+            }
+        
+         #newuser:hover{
+        background-color: black;
+        width: 100px;
+    }
+            .divback{
+                margin-top: 150px;
+            }
+              #newuser{
+       
+        background-size: 50px;
+        background-color: aquamarine;
+        font-size: 40px;
+        font-style: italic;
+       
+    }
+    #newuser:hover{
+        background-color: black;
+        width: 100px;
+    }
+    .menu a:hover{
+        opacity: 0.6;
+        width: 100px;
+            
+    }
+            #form{
+                margin-top: 160px;
+            }
+   
+            .divback{
+                
+         background-image: url(image/background.png);
+        }
+    
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+         <div class="div1">
+   <a href="../CCNAlearn.com/Ccnalearn.html">  <img src="image/logo.png"/></a>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="../CCNAlearn.com/new_user.html" id="newuser">New user</a>    
+    
+    
+
+</div>
+    <div class= "menu">
+   
+        <a href="Home.html">Home</a>  
+           <a href="Models.html">Models</a>
+        <a  href="Protocol.html">Protocols</a>
+        <a href="../CCNAlearn.com/ip.html">Internal Protocol</a>
+        <a href="../CCNAlearn.com/Routing.html">Example</a>        
+    </div>
+            </div>
+        <div class="divback">
+         <form action="loginpage.php" method="post"  id="form" onsubmit="return validation()" name="myform">
+     <center>
+        
+    <label>Name: </label><input type="text" name="name" ><br><br>
+    <label>Username :</label><input type="text" name="username" ><br><br>
+    <label>Password :</label><input type="password" name="passwordd" ><br><br>
+    <label>DOB :</label><input type="text" name="dateob" ><br><br>
+    <label>Address :</label> <textarea name="address"></textarea><br><br>
+    <label>Country :</label><input type="text" name="country" ><br><br>
+    <label>City :</label><input type="text" name="city"><br><br>
+   
+    <input type="submit" name="submit" value="Submit">
+        
+    </center>
+        </form> 
+            
+            <script>
+            function validation(){
+               var name= document.myform.name.value;
+                var Username = document.myform.username.value;
+                var Password = document.myform.passwordd.value;
+                var DOB = document.myform.dateob.value;
+                var Address =document.myform.address.value;
+                var Country = document.myform.country.value;
+                var City = document/myform.city.value;
+                if(name==null || name==""){
+                    alert("Please fill the name");
+                    return false;
+                }else  if(Username==null ||Username ==""){
+                    alert("Please fill the Username");
+                    return false;
+                }else  if(Password.length< =6){
+                    alert("Please fill the Password");
+                    return false;
+                }else  if(DOB==null || DOB==""){
+                    alert("Please fill the DOB");
+                    return false;
+                }else  if(Address==null || Address==""){
+                    alert("Please fill the Address");
+                    return false;
+                }else  if(Country==null ||Country==""){
+                    alert("Please fill the Address");
+                    return false;
+                }else  if(City==null ||City==""){
+                    alert("Please fill the City");
+                    return false;
+                }
+                
+            }
+        </script>
+         <footer  id ="footer" style="color:white;">
+            <h1>CCNA tutorial</h1>
+            <p>CCNA Routing and Switching curriculum is a gateway to entry-level networking jobs and IT careers. The curriculum consists of 4, 70-hour courses: Introduction to Networks, Routing and Switching Essentials, Scaling Networks, and Connecting Networks. The first 2 courses prepare you for the Cisco CCENT certification exam or to study CCNA Security. All 4 courses are recommended before taking the Cisco CCNA Routing and Switching certification exam.<br><br>
+Develop a working knowledge of routing, switching, network applications, protocols, and services.<br><br>
+Study with an instructor in the classroom and access expert content online anytime.<br><br>
+Practice what you learn on both real equipment and Cisco Packet Tracer, a network configuration simulation tool.<br><br>
+Get immediate feedback on your work through built-in quizzes and tests.<br><br>
+Prepare for the workplace with collaborative projects and presentations.<br><br>
+Connect with the global Cisco Networking Academy community.<br>
+</p>
+        <a href="#">Facebook</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#">twiter</a>
+        
+        
+        </footer>
+            </div>
+    </body>
+    
+    </html>

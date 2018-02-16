@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+                <link type="img-x-icom" rel="icon" href="image/favicon.png">
+    <style>
+        * {
+    box-sizing: border-box;
+}
+ .div1 img{
+        width:200px;
+        height: 100px;
+    }
+    .menu {
+        
+       
+        width: 100%;
+        height: 40px;
+       
+    background-color: aqua;
+}
+    .menu a{
+        border-width: 5px;
+    
+        
+padding: 30px 100px ;
+            }
+body {
+  margin: 0;
+}
+        #footer {
+            background-color: blue;
+        } 
+        #footer a{
+            font-size: 50px;
+            color: white;
+            
+        }
+         #footer a:hover{
+            font-size: 60px;
+            color: green;
+            
+        }
+    .column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    
+    width: 20%;
+}  
+
+/* Middle column */
+.column.middle {
+    
+    width: 60%;
+}
+       
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+        
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle, .column.sides {
+        width: 100%;
+    }
+}
+       #newuser{
+        background-size: 50px;
+        background-color: aquamarine;
+        font-size: 40px;
+        font-style: italic;
+       
+    } #newuser:hover{
+        background-color: black;
+        width: 100px;
+    }
+    .menu a:hover{
+       opacity: 0.5;
+        
+    }
+        .topnav{
+        background-color: white;
+        width: 100%;
+        height: 120px;
+        top: 0px;
+               position: fixed;
+        
+    }
+        .divback{
+            margin-top: 150px;
+        }
+        
+        #table{
+            border: dotted;
+        }
+        #table tr{
+            background-color: chartreuse;
+           
+        }
+        
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+        <div class="div1">
+<a href="../CCNAlearn.com/Ccnalearn.html">  <img src="image/logo.png"/></a>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="../CCNAlearn.com/new_user.html" id="newuser">New user</a>    
+        </div>
+ <div class= "menu">
+    <a href="Home.html">Home</a>  
+           <a href="Models.html">Models</a>
+        <a  href="Protocol.html">Protocols</a>
+        <a href="../CCNAlearn.com/ip.html">Internal Protocol</a>
+        <a href="../CCNAlearn.com/Routing.html">Example</a>  
+        
+    </div >
+            </div>
+        <div class="divback">
+   <div class="row">
+  <div class="column side">
+<ol>
+      <li>OSI MODEL</li>
+         <ul>
+            <li >-><a href="../CCNAlearn.com/Layer1.html">Physical Layer</a></li>
+             <li>-><a href="../CCNAlearn.com/Datalink.html">Data-link Layer</a></li>
+             <li>-><a href="../CCNAlearn.com/network.html">Network Layer</a></li>
+             <li>-><a href="../CCNAlearn.com/Transport.html">Transport Layer</a></li>
+             <li>-><a href="#" >Session Layer</a></li>
+             <li>-><a href="#">Presentation Layer</a></li>
+             <li>-><a  href="../CCNAlearn.com/Application.html">Application Layer</a></li>
+         
+         
+         </ul>
+    <li>TCP/IP MODEL ==><a href="../CCNAlearn.com/tcp-ip.html" >All in one</a></li>
+    <ul>
+    <li>-><a href="#">Application Layer</a></li>
+        <li>-><a href="#">Transport Layer</a></li>
+        <li>-><a href="#">Internet/Network Layer</a></li>
+        <li>-><a href="#">Host-to-Network Laye</a>r</li>
+    </ul>
+      </ol>
+  </div>
+       <div class="column middle">
+       <h3>Transport layer</h3>
+           <p>The transport layer is the heart of Internet model.The application layer programs interact with each other using the sevices of the transport layer</p>
+       <h4>Function of Transport Layer:-</h4>
+           <ol><li>Packetizing</li>
+               <li>Connection control</li>
+               <li>Addressing</li>
+               <li>Better reliability</li>
+               <li>Error Control</li>    
+        </ol>
+           
+           <table id="table">
+           <tr>
+               <th>TCP</th>
+               <th>UDP</th>
+               </tr>
+               <tr>
+               <td>Transmission Control Protocol</td>
+               <td>User Datagram Protocol</td>
+               </tr>
+               <tr>
+               <td>TCP is a connection-oriented protocol</td>
+               <td>UDP is connectionless protocol</td>
+               </tr>
+               <tr>
+               <td>As message makes its away across the internet from one computer to another</td>
+               <td>This is not connection based which means that one program can send a load of packets to another and that would be the end of the relationship.</td>
+               </tr>
+               <tr>
+               <td>HTTP, HTTPs, FTP, SMTP, Telnet</td>
+               <td>DNS, DHCP, TFTP, SNMP, RIP, VOIP</td>
+               </tr>
+               <tr>
+               <td>The speed for TCP is slower than UDP.</td>
+               <td>UDP is faster because error recovery is not attempted. It is a "best effort" protocol.</td>
+               </tr>
+               <tr>
+               <td>TCP header size is 20 bytes</td>
+               <td>UDP Header size is 8 bytes</td>
+               </tr>
+               <tr>
+               <td>TCP does Flow Control. TCP requires three packets to set up a socket connection, before any user data can be sent. TCP handles reliability and congestion control.</td>
+               <td>UDP does not have an option for flow control</td>
+               </tr>
+               <tr>
+               <td>TCP rearranges data packets in the order specified.</td>
+               <td>UDP has no inherent order as all packets are independent of each other. If ordering is required, it has to be managed by the application layer.</td>
+               </tr>
+               <tr>
+               <td>Source port, Destination port, Check Sum</td>
+               <td>Source port, Destination port, Check Sum</td>
+               </tr>
+               <tr>
+               <td>Data is read as a byte stream, no distinguishing indications are transmitted to signal message (segment) boundaries.</td>
+               <td>Packets are sent individually and are checked for integrity only if they arrive. Packets have definite boundaries which are honored upon receipt, meaning a read operation at the receiver socket will yield an entire message as it was originally sent.</td>
+               </tr>
+           </table>
+       </div>
+       <div class="column side">
+       <iframe width="250" height="200" src="https://www.youtube.com/embed/Bu7fLORno9g" frameborder="0" gesture="media" allowfullscreen></iframe>
+
+<iframe width="250" height="200" src="https://www.youtube.com/embed/LG2YPY3-3wE" frameborder="0" gesture="media" allowfullscreen></iframe>
+
+       </div>
+        </div>
+        <footer  id ="footer" style="color:white;">
+            <h1>CCNA tutorial</h1>
+            <p>CCNA Routing and Switching curriculum is a gateway to entry-level networking jobs and IT careers. The curriculum consists of 4, 70-hour courses: Introduction to Networks, Routing and Switching Essentials, Scaling Networks, and Connecting Networks. The first 2 courses prepare you for the Cisco CCENT certification exam or to study CCNA Security. All 4 courses are recommended before taking the Cisco CCNA Routing and Switching certification exam.<br><br>
+Develop a working knowledge of routing, switching, network applications, protocols, and services.<br><br>
+Study with an instructor in the classroom and access expert content online anytime.<br><br>
+Practice what you learn on both real equipment and Cisco Packet Tracer, a network configuration simulation tool.<br><br>
+Get immediate feedback on your work through built-in quizzes and tests.<br><br>
+Prepare for the workplace with collaborative projects and presentations.<br><br>
+Connect with the global Cisco Networking Academy community.<br>
+</p>
+        <a href="#">Facebook</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#">twiter</a>
+        
+        
+        </footer></div>
+    </body>
+</html>

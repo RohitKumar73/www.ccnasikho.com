@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+                <link type="img-x-icom" rel="icon" href="image/favicon.png">
+    <style>
+        * {
+    box-sizing: border-box;
+}
+         #footer {
+            background-color: blue;
+        } 
+        #footer a{
+            font-size: 50px;
+            color: white;
+            
+        }
+         #footer a:hover{
+            font-size: 60px;
+            color: green;
+            
+        }
+ .div1 img{
+        width:200px;
+        height: 100px;
+    }
+    .menu {
+        width: 100%;
+        height: 40px;
+       
+    background-color: aqua;
+}
+    .menu a{
+        border-width: 5px;
+    
+        
+padding: 30px 100px ;
+            }
+body {
+  margin: 0;
+}
+    .column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    
+    width: 20%;
+}  
+
+/* Middle column */
+.column.middle {
+    
+    width: 60%;
+}
+       
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+        
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle, .column.sides {
+        width: 100%;
+    }
+}
+        #table{
+            border-style: double;
+            
+        }
+        #table tr{
+          background-color: antiquewhite;
+        }
+        
+         #newuser{
+        background-size: 50px;
+        background-color: aquamarine;
+        font-size: 40px;
+        font-style: italic;
+       
+    }
+         #newuser:hover{
+        background-color: black;
+        width: 100px;
+    }
+    .menu a:hover{
+       opacity: 0.5;
+        
+    }
+        .topnav{
+        background-color: white;
+        width: 100%;
+        height: 120px;
+        top: 0px;
+               position: fixed;
+        
+    }
+        .divback{
+            margin-top: 120px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+        <div class="div1">
+  <a href="../CCNAlearn.com/Ccnalearn.html">  <img src="image/logo.png"/></a>
+     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="../CCNAlearn.com/new_user.html" id="newuser">New user</a>    
+        
+
+    
+
+</div>
+    <div class= "menu">
+   
+         <a href="Home.html">Home</a>  
+           <a href="Models.html">Models</a>
+        <a  href="Protocol.html">Protocols</a>
+        <a href="../CCNAlearn.com/ip.html">Internal Protocol</a>
+        <a href="../CCNAlearn.com/Routing.html">Example</a>  
+        
+    </div >
+            </div>
+        <div class="divback">
+   <div class="row">
+  <div class="column side">
+  </div>
+       <div class="column middle">
+         <h3>Internet protocol(IP)</h3>
+       <p><strong>Internet protocol(IP)</strong> is a host-to-host network layer delivery protocol designed for the internet.Its is a connectionless datagram protocol with  no reliability assurance .Its is unrelianle as is does not provide and error contro or flow contol mechanism.
+       
+       </p>
+                  <strong>ip provides the following services:</strong>
+<ol>
+       <li><strong>Address:</strong> IP headers contain 32bit address that identify the sending and receiving hosts</li>
+    <li><strong>Fragmentation:</strong> IP packets may be split or fragmented into smaller packets.</li>
+            <li><strong>Packet Timeout:</strong> Each IP packet contains a Time-to-Live field, which is decremented every time a router bandles ths packet . if RRl reaches zero the packet is discarded priventing packets from runnning in circlis foreer and flooding a network.</li>
+    <li><strong>Type of Service:</strong> IP supports traffic prioritization by allowing packets to be labeled</li>
+       </ol>
+        <h4>IP Addressing</h4>
+<p>
+       Classic TCP/IP addressing architectyre divides all possible IP addresses into classes based on the nost significant bits of the address. The three main address classessare ClassA ,Class B,and Class C. 
+         </p>  
+          <p>  <strong>Class A</strong> Addresses have a binary zero(0) ass tge nist significant bit of the address. The address range is from 0
+           0.0.0.0 to 126.255.255.255.</p><strong>The network portion is the most significant byte of the addresses and the host portion is the three byte remainder.Class A network addresses are inteneded for networks that have more than 65,534 hosts on as single network </strong>
+          <p>  <strong>Class B</strong> Addresses range is from 128.0.0.0 to 191.255.255.255 . The network portion is the most significant two bytes of the address and the host portion is the two byte remainder.Class B network addresses are intended for networks that have from 255 to 65,534 host on single network</p>
+           <p> <strong>Class C</strong> addresses have binary One One Zero as the most Significant three bits of address.The address range is from 192.0.0.0 to 223.255.255.255. The network portion is the most significant three bytes of address and the host is one byte remainder</p>
+           <h4>Subnetting a Network</h4>
+           <p>Subnet masks can divide networks into smaller network.In order to understand this process, a discussion on binary-to-decimal number conversion is required.</p>
+           <p>The typical subnet mask 255.255.255.0 represents 4 byte of data.Each number represent 1 byte and is displayed as a decimal numbers.One byte consists of 8 bits,where 0000 0000 represents 0(in decimal) and 1111 1111 represents 255(in decimal)</p>
+           
+           <table id="table">
+           <tr>
+               <th>IPv4</th>
+               <th>IPv6</th>
+               </tr>
+               <tr>
+               <td>IPv4 address 32bit length</td>
+                   <td>IPv6 address 128 bit length</td>
+               </tr>
+               <tr>
+               <td>IPv4 address is written by dotted decimal notation like 127.68.1.1</td>
+                   <td>IPv6 address is written in hex  like ACDB:AC88:6765:7777:ADFC:AC66:5789:1234</td>
+               </tr>
+               <tr>
+               <td>Its header has a checksum that must be computed by each router.</td>
+                   <td>IPv6 has no header checksum because checksum are anove th TCP/IP portocol suite.</td>
+               </tr>
+               <tr>
+               <td>IPv4 has only stateful auto-configuration.</td>
+                   <td>IPv6 bide gas both a stateful and stateless address auto-configuration mechanism</td>
+               </tr>
+               <tr>
+               <td>Limited security to tunneling between 2 networks.</td>
+                   <td>Its satisfies the growing and expanded need for network security.</td>
+               </tr>
+               <tr>
+               <td>Source and destination addresses are 32 bits/4 bytes in length.</td>
+                   <td> Source and destination addresses are 128 bits/16 bytes in length.</td>
+               </tr>
+               <tr>
+               <td>IPsec support is optional.</td>
+                   <td>IPsec support is needed</td>
+               </tr>
+               <tr>
+               <td>It must be configured either manually or through DHCP.</td>
+                   <td>Its does not require manual configuration or DHCP.</td>
+               </tr>
+                       
+           </table>
+           
+       </div>
+       <div class="column side">
+       
+       <iframe width="250" height="200" src="https://www.youtube.com/embed/Bu7fLORno9g" frameborder="0" gesture="media" allowfullscreen></iframe>
+
+<iframe width="250" height="200" src="https://www.youtube.com/embed/LG2YPY3-3wE" frameborder="0" gesture="media" allowfullscreen></iframe>
+
+       </div>
+        </div>
+         <footer  id ="footer" style="color:white;">
+            <h1>CCNA tutorial</h1>
+            <p>CCNA Routing and Switching curriculum is a gateway to entry-level networking jobs and IT careers. The curriculum consists of 4, 70-hour courses: Introduction to Networks, Routing and Switching Essentials, Scaling Networks, and Connecting Networks. The first 2 courses prepare you for the Cisco CCENT certification exam or to study CCNA Security. All 4 courses are recommended before taking the Cisco CCNA Routing and Switching certification exam.<br><br>
+Develop a working knowledge of routing, switching, network applications, protocols, and services.<br><br>
+Study with an instructor in the classroom and access expert content online anytime.<br><br>
+Practice what you learn on both real equipment and Cisco Packet Tracer, a network configuration simulation tool.<br><br>
+Get immediate feedback on your work through built-in quizzes and tests.<br><br>
+Prepare for the workplace with collaborative projects and presentations.<br><br>
+Connect with the global Cisco Networking Academy community.<br>
+</p>
+        <a href="#">Facebook</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#">twiter</a>
+        
+        
+        </footer></div>
+    </body>
+</html>
